@@ -9,7 +9,7 @@
   margin: 0;
   padding: 1em;
   text-align: center;
-  background: #333;
+  background: #57a4de;
   color: white;
 }
 
@@ -38,3 +38,10 @@ button {
 i {
   font-style: normal;
 }
+
+.App.dark,
+  .App.dark button {
+    background: #222;
+    border-color: white;
+    color: white;
+  }

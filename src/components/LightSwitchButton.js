@@ -3,7 +3,10 @@ function LightSwitchButton(props) {
   const handleClick = () => setLight(light === "on" ? "off" : "on");
 
   return (
-    <button onClick={handleClick} className="LightSwitchButton">
+    <button
+      onClick={handleClick}
+      className={`LightSwitchButton ${light === "off" ? "dark" : ""}`}
+    >
       {light === "on" && (
         <span>
           <i>💡</i> I'm on!
